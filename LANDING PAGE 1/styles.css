@@ -1,0 +1,269 @@
+:root {
+    --primary-color: #0d2d36;
+    --secondary-color: #8e9eab;
+    --text-color: #ffffff;
+    --btn-background-color: rgba(250, 248, 248, 0.8);
+    --btn-text-color: #333333;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+header {
+    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+    color: var(--text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--btn-background-color);
+}
+
+.header-content {
+    padding: 60px 20px;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.header-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.header-content .btn {
+    background-color: var(--btn-background-color);
+    color: var(--btn-text-color);
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-content .btn:hover {
+    background-color: var(--btn-text-color);
+    color: var(--btn-background-color);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.course-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+
+.course-description, .syllabus {
+    padding: 20px;
+}
+
+.syllabus ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.syllabus ul li {
+    background: #7aa9b7;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.syllabus ul li img.course-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.syllabus ul li p {
+    margin: 0;
+}
+
+.instructor {
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 10px 20px;
+    border-radius: 10px;
+    display: flex; /* Make the container a flexbox */
+    justify-content: space-between; /* Distribute space between profiles */
+    align-items: center; /* Align items vertically in the center */
+    flex-wrap: nowrap; /* Prevent wrapping to ensure all profiles stay in one line */
+}
+
+.instructor-profile {
+    text-align: center;
+    flex: 1; /* Allow each profile to take equal space */
+    margin: 0 10px; /* Add spacing between profiles */
+    max-width: 30%; /* Limit the width of each profile */
+}
+
+.instructor-photo {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.enrollment {
+    padding: 40px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+
+/* New Instructor Section */
+.new-instructors {
+    padding: 40px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.new-instructors h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.instructor-profile {
+    text-align: center;
+    flex: 1;
+    margin: 0 20px;
+    max-width: 30%;
+}
+
+.instructor-profile img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.instructor-profile h3 {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+.instructor-profile p {
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin: 10px 0;
+}
+
+/* Flex container for the instructor profiles */
+.new-instructors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* footer section */
+
+footer {
+    background-color: #0d2d36; /* Light gray background for the footer */
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #0d2d36; /* Optional: Add a border at the top */
+}
+
+.newslatter {
+    margin-bottom: 20px;
+}
+
+.newslatter h3 {
+    font-size: 18px;
+    color: #6a6060;
+    margin-bottom: 10px;
+}
+
+.newslatter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.newslatter .cta-button {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Red color for the button */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.newslatter .cta-button:hover {
+    background-color: #cc0000; /* Darker red on hover */
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .instructor-profile {
+        max-width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Add vertical spacing between stacked profiles */
+    }
+}
