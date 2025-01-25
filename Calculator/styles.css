@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('2D\ calculator\ with\ shades\ and\ background\ similar\ to\ the\ generated\ image.png'); /* Background image */
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgba(11, 11, 11, 0.2);
+    padding: 20px;
+    width: 320px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.display {
+    background-color: #aeadad;
+    color: #201515;
+    font-size: 2em;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: right;
+    height: 60px;
+    box-shadow: inset 0 0 5px rgba(15, 14, 14, 0.3);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background-color: #4cafa8; /* Green background */
+    color: rgb(29, 23, 23);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 3px 3px 5px rgba(20, 19, 19, 0.2);
+}
+
+.button:hover {
+    background-color: #4af1d0;
+    box-shadow: 3px 3px 15px rgba(20, 19, 19, 0.3);
+}
+
+.button:active {
+    background-color: #31bab6;
+}
+
+.button.operator {
+    background-color: #c49c5c; /* Orange background */
+}
+
+.button.operator:hover {
+    background-color: #e67e22;
+}
+
+.button.zero {
+    grid-column: span 2;
+}
+
+.button.equal {
+    grid-row: span 2;
+    background-color: #91413e; 
+}
+
+.button.equal:hover {
+    background-color: #c9302c;
+}
